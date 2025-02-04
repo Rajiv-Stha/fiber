@@ -1,0 +1,105 @@
+
+
+.logoFooter{
+    width: 100px;
+    height: 90px;
+
+}
+@media(max-width:767px){
+    .gapp{
+        gap: 50px;
+    }
+}
+
+.lists li{
+list-style-type: none;
+}
+.lists li a{
+    text-decoration: none;
+    color: white;
+    /* font-size: 25px; */
+    }
+.lists li a:hover{
+        color: #24aae2 !important;
+    }
+    .head{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .lists li p{
+        text-decoration: none;
+        color: white;
+        /* font-size: 25px; */
+        }
+.social-media i{
+    font-size: 32px;
+    color: white;
+    transition: 0.2s;
+}
+
+/* .d-flex{
+    display: !flex;
+} */
+
+@media(min-width:992px){
+    .padding{
+        padding-right: 50px !important;
+    }
+}
+.borderr{
+    border-bottom: 2px solid white ;
+    padding-bottom: 30px;
+
+}
+.font1{
+    font-size: 18px;
+}
+.paddingg{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.footer{
+    height: 700px;
+    background-color: darkgray;
+
+}
+.btn-btn{
+    background-color: #24aae2 !important;
+    color: white !important;
+}
+.btn-btn:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.border-right{
+    border-right: 2px solid white;
+    padding-right: 80px !important;
+}
+@media(max-width:991px){
+    .hide{
+        display: none;
+    }
+    .border-right{
+        border-right: none;
+        border-bottom: 2px solid white;
+        padding-bottom: 40px;
+    }
+}
+.facebook:hover{
+    color: #1877F2;
+    }
+    .instagram:hover {
+        background-image: linear-gradient(30deg, #f9ce34 , #ee2a7b, #6228d7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+    .whatsapp:hover{
+        color: #25d366;
+    }
+
+    .emailSize{
+        font-size: 13px;
+    }
+    

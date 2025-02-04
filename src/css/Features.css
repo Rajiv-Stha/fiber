@@ -1,0 +1,61 @@
+.borderrr{
+    border-bottom: 3px solid black;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.major-features{
+    display: flex;
+}
+
+.imgfeatures{
+    width: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.zoom  {
+    transition: transform 0.5s ease; 
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1) !important;
+  }
+  .zoom:hover .imgfeatures{
+    transition: 0.5s;
+    transform: rotate(360deg);
+  }
+  
+
+  
+  
+  /* .line {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #7b7272; /* Adjust color as needed */
+    /* width: 10% !important; */
+  /* } */
+
+.popular-brands-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.popular-brands-heading::before,
+.popular-brands-heading::after {
+    content: '';
+    flex: 1;
+    border-bottom: 6px solid #cecaca;
+    margin: 0 10px; 
+
+}
+@media(max-width:760px){
+  .popular-brands-heading::before,
+  .popular-brands-heading::after {
+      content: none;
+  }
+}
+

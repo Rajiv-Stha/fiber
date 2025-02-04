@@ -1,0 +1,50 @@
+.container {
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}
+
+.card-container {
+    flex: 0 0 auto; 
+    width: 18rem;
+    margin-right: 1rem; 
+    transition: transform 0.3s;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+
+.paused {
+    animation-play-state: paused;
+}
+.slide-track{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.btn-btn:hover{
+    border-color: #24aae2 !important;
+    color: #24aae2 !important;
+}
+.btn-btn{
+    border-color: #24aae2 !important;
+    
+}

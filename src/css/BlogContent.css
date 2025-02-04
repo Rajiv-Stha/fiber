@@ -1,0 +1,26 @@
+.Card.Img{
+    width: 80;
+    height: 80;
+    background: '#ff6d6d';
+    border-radius: 8;
+    width: 80,
+}
+/* .card{
+    border-radius: 50%;
+    color: brown;
+} */
+.color{
+    background-color: #24aae2!important;
+    color: white !important;
+    width: 150px;
+    border: 1px solid #24aae2 !important;
+    padding-top: 10px !important;
+}
+.color:hover{
+    background-color: white !important;
+    color: #24aae2 !important;
+    border: 1px solid #24aae2 !important;
+}
+.page-link:focus{
+    box-shadow: none !important;
+}

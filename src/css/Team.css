@@ -1,0 +1,38 @@
+
+.social a {
+    color: white;
+    font-size: 22px;
+}
+.social a:hover{
+    color: #24aae2;
+}
+.box2:hover{
+border-color: black !important;
+}
+.box2{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.box2:hover{
+    background-color: #24aae2 !important;
+    border-color: #24aae2 !important;
+}
+.box2:hover{
+    transform: scale(1.03);
+}
+.facebook:hover{
+    color: #1877f2;
+    }
+    .instagram:hover{
+        color: #833ab4;
+    }
+    .whatsapp:hover{
+        color: #25d366;
+    }
+    .teamPost{
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .box2:hover .teamPost{
+        opacity: 1;
+    }

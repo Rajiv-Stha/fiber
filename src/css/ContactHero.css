@@ -1,0 +1,43 @@
+
+.border-form{
+    border: 2px solid rgb(33, 37, 41) !important;
+    border-radius: 20px;
+
+}
+
+/* .form{
+    justify-content: center;
+} */
+.boder{
+border-radius: 15px 0 0 15px;
+}
+@media(max-width:991px){
+    .boder{
+        border-radius: 15px 15px 0 0px;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+}
+.links a{
+    color: white;
+    font-size: 40px;
+    transition: 0.2s;
+}
+.facebook:hover{
+color: #1877f2;
+}
+/* .instagram:hover{
+    color: ;
+} */
+.whatsapp:hover{
+    color: #25d366;
+}
+.text-success{
+font-weight: bold;
+    
+}

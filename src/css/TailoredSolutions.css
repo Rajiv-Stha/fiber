@@ -1,0 +1,29 @@
+.container{
+    position: relative;
+}
+
+/* .sector.img{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+} */
+
+
+.foto{
+    width: 180px;
+    height: 180px;
+}
+/* @media (max-width: 768px) {
+    .org .foto {
+        opacity: 1;
+    }
+} */
+/* .org{
+    justify-content: center;
+} */
+ .org:hover{
+    transform: scale(1.05);
+ }
+ .org{
+    transition: 0.3s;
+ }

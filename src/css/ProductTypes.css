@@ -1,0 +1,41 @@
+
+.menu-item {
+    perspective: 1000px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    /* transform: rotateY(10deg); */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* background-color: #24aae2; */
+    transform: scale(1.01);
+  }
+  
+  
+
+  /* .menu-item:hover .card-body {
+    transform: translateZ(20px);
+  } */
+
+  .card-img-top2{
+    /* height: 250px ;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px; */
+    height: 294px !important;
+    width: 100% !important;
+    
+
+  }
+  @media(max-width:767px) and (min-width:370px){
+    .card-img-topp{
+      height: 60vh !important;
+  }
+}
+  .seeMore{
+    text-decoration:none;
+    color: #24aae2;
+  }
+  .seeMore:hover{
+    text-decoration: underline;
+  }

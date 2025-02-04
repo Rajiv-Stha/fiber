@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .whatsappBtn {
+    position: fixed;
+    bottom: 50px; /* Adjust the value as needed */
+    right: 20px;  /* Adjust the value as needed */
+    z-index: 1000; /* Ensures the button stays above other content */
+  }
+  
+  .whatsappBtn a {
+    text-decoration: none; /* Optional: To remove underline from the link */
+  }
+  
+  .whatsappBtn i {
+    font-size:50px; /* Adjust the size of the icon as needed */
+    color: #25D366; /* WhatsApp's brand color */
+  }
+  
+  .tooltip1 {
+    opacity: 1;
+    position: absolute;
+    bottom: 50%; /* Adjust to position the tooltip correctly */
+    right: 50px; /* Adjust to position the tooltip correctly */
+    transform: translateY(50%);
+    background-color: #25D366; /* WhatsApp's brand color */
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px; /* Adjust the size of the text as needed */
+    transform: opacity 0.3s ;
+  }
+  
+  /* .hlo:hover .tooltip1{
+    opacity: 0;
+  }
+   */
+
+
+  
+  body, p, a, span, button, .btn, .btn-btn, .btn-btn3, .btn-btn2{
+    font-family: 'POPPINS' ;
+    font-weight: 400;
+  }
+  h1, h2, h3, h4, h5{
+    font-family: "Montserrat" !important;
+    font-weight: bold !important;
+
+    
+  }
+  .nav-link{
+    font-family: 'POPPINS' !important;
+    font-weight: lighter;
+  }

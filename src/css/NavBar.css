@@ -1,0 +1,98 @@
+.bold{
+    color: black !important;
+  }
+  .font{
+
+    
+    font-size: 25px;
+  }
+  .logo{
+    width: 63px;
+    height: 58px;
+  }
+  .bg-nav{
+    background-color: #e5e3e3;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+  }
+  .contact{
+    background-color: gray!important;
+    color: white !important;
+    /* border: 2px solid black !important; */
+    border-radius: 50px !important;
+    padding: 15px;
+  }
+  .contact:hover{
+    background-color: white  !important;
+    color: black !important;
+  }
+  .contact2{
+    background-color: #24aae2!important;
+    color: white !important;
+    /* border: 2px solid black !important; */
+    border-radius: 50px !important;
+    padding: 15px;
+  }
+  .contact:hover{
+    color: #24aae2 !important;
+  }
+  
+  .contact2:hover{
+    background-color: white  !important;
+    color: black !important;
+  }
+  .margin-left{
+    margin-left: 5px;
+  }
+  @media(max-width:767px){
+    .contact{
+      display: none !important;
+    }
+  }
+  @media(min-width:767px){
+    .contact2{
+      display: none !important;
+    }
+  }
+  .navbar{
+    --bs-navbar-toggler-focus-width: 0rem !important;
+  }
+  .hideNav{
+    transform: translateY(-100%);
+    transition: 1s ;
+    top: -100px;
+  }
+  .showNav{
+    /* transform: translateY(-100%); */
+    transition: 0.5s ;
+    top: 0;
+  }
+  .aqua {
+    background-color: #24aae2 !important;
+    color: white !important;
+    border-radius: 10px;
+  }
+  
+  
+  .hover:hover{
+    color: #24aae2 !important;
+  }
+
+
+
+  .bg-nav {
+    transition: top 0.5s;
+  }
+  
+  .bg-nav.hidden {
+    top: -100px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .bg-nav.visible {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  

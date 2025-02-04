@@ -1,0 +1,47 @@
+.aboutBorder2{
+    border-bottom: 4px solid #24aae2; 
+    display: inline-block; 
+    
+}
+.bullsEye{
+    height: 100px;
+    width: 100px;
+    /* background-color: #24aae2; */
+    border-radius: 50%;
+    /* padding: px; */
+    font-size: 50px;
+    color: #24aae2;
+    margin-bottom: 10px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+.card-image{
+    /* background-color: rgb(218, 213, 213) ; */
+    padding: 50px;
+    border-radius: 20px;
+    transition: 0.4s;
+    border: 3px solid rgb(218, 213, 213);
+}
+
+@media(max-width:450px){
+    .card-image{
+        padding: 10px;
+    }
+}
+
+.card-image:hover{
+    transform: scale(1.05);
+    background-color: #24aae2;
+    border-color: #24aae2;
+}
+.card-image:hover .bullsEye{
+    color: white;
+}
+.card-image:hover .target{
+    color: white;
+}
+.card-image:hover .text-center{
+    color: white;
+}
