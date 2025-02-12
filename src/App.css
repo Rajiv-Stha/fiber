@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,9 @@
     right: 20px;  /* Adjust the value as needed */
     z-index: 1000; /* Ensures the button stays above other content */
   }
-  
+  a{
+    text-decoration: none!important;
+  }
   .whatsappBtn a {
     text-decoration: none; /* Optional: To remove underline from the link */
   }

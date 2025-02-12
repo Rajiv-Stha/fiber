@@ -15,15 +15,16 @@ import Furniture from "./components/Furniture";
 import SchoolFurniture from "./components/SchoolFurniture";
 import Bath from "./components/Bath";
 import Agriculture from "./components/Agriculture";
-import "@fontsource/montserrat"; 
+import "@fontsource/montserrat";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/400-italic.css";
-import "@fontsource/poppins"; 
-import "@fontsource/poppins/200.css"; 
-import "@fontsource/poppins/200-italic.css"; 
+import "@fontsource/poppins";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/200-italic.css";
+import CategoryPage from "./pages/categoryPage";
+import CategoryDetails from "./pages/CategoryDetail";
 
 function App() {
-  
   return (
     <>
       <BrowserRouter>
@@ -32,6 +33,12 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<AboutUs />} />
+            <Route path="category" element={<CategoryPage />} />
+            <Route
+              path="category/:category1/:category2"
+              element={<CategoryDetails />}
+            />
+            <Route path="about" element={<AboutUs />} />
             <Route path="products" element={<Products />} />
             <Route path="blogs" element={<Blogs />} />
             <Route path="contact" element={<Contact />} />
@@ -39,36 +46,23 @@ function App() {
               path="products/productDetails/:id"
               element={<ProductDetailPage />}
             /> */}
-            <Route path="/productDetails/:id" element={<ProductDetailPage/>} />
-                        <Route
-              path="blogs/BlogDetails/:id"
-              element={<BlogDetails/>}
-            />
+            <Route path="/productDetails/:id" element={<ProductDetailPage />} />
+            <Route path="blogs/BlogDetails/:id" element={<BlogDetails />} />
+            <Route path="productCategory" element={<ProductCatagoryPage />} />
+            <Route path="productCategory/furniture" element={<Furniture />} />
             <Route
-            path="productCategory"
-            element={<ProductCatagoryPage/>}
+              path="productCategory/SchoolFurniture"
+              element={<SchoolFurniture />}
             />
-            <Route 
-            path="productCategory/furniture"
-            element={<Furniture/>}
-            />
-            <Route 
-            path="productCategory/SchoolFurniture"
-            element={<SchoolFurniture/>}
-            />
-            <Route 
-            path="productCategory/Bath"
-            element={<Bath/>}
-            />
-            <Route 
-            path="productCategory/Agriculture"
-            element={<Agriculture/>}
+            <Route path="productCategory/Bath" element={<Bath />} />
+            <Route
+              path="productCategory/Agriculture"
+              element={<Agriculture />}
             />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
-
     </>
   );
 }

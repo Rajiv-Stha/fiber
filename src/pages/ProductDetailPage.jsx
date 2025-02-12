@@ -13,18 +13,7 @@ const ProductDetailPage = () => {
       setProduct(existingProduct)
     }
   },[[id, data]])
-  // const product = {
-  //   name: "Smart Dustbin",
-  //   description: "Experience crystal-clear audio with our comfortable, long-lasting wireless dustbin. Perfect for music lovers and professionals alike.",
-  //   features: [
-  //     "40-hour battery life",
-  //     "Active noise cancellation",
-  //     "Bluetooth 5.0",
-  //     "Comfortable over-ear design",
-  //     "Built-in microphone for calls"
-  //   ],
-  //   imageUrl: "https://duytan.com/Data/Sites/1/Product/5907/thung-rac-nap-kin-90-xanhla.png" // Replace with actual image URL
-  // };
+  
 
   return (
     <>
