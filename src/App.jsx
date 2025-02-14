@@ -23,6 +23,7 @@ import "@fontsource/poppins/200.css";
 import "@fontsource/poppins/200-italic.css";
 import CategoryPage from "./pages/categoryPage";
 import CategoryDetails from "./pages/CategoryDetail";
+import CategoryEachDetail from "./pages/CategoryEachDetail";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="blogs/BlogDetails/:id" element={<BlogDetails />} />
             <Route path="productCategory" element={<ProductCatagoryPage />} />
             <Route path="productCategory/furniture" element={<Furniture />} />
+            <Route path="/category/:categoryName" element={<CategoryEachDetail />} />
             <Route
               path="productCategory/SchoolFurniture"
               element={<SchoolFurniture />}

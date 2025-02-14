@@ -10,7 +10,11 @@ export default function CategoryPage() {
           {Object.entries(productData).map(([category, products]) => (
             <div key={category} className="space-y-6">
               <div className="flex items-center gap-2">
-                <h2 className="text-2xl font-semibold text-blue-600 capitalize">{category.replace(/([A-Z])/g, ' $1')}</h2>
+              <Link to={`/category/${category}`}>
+  <h2 className="text-xl font-semibold text-blue-500 capitalize">
+    {category.replace(/([A-Z])/g, " $1")}
+  </h2>
+</Link>
                 <ChevronRight className="w-5 h-5 text-blue-600" />
               </div>
 

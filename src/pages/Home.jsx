@@ -4,6 +4,8 @@ import Features from "../components/Features";
 // import ProductCategories from "../components/ProductCategories";
 // import LatestProduct from "../components/LatestProduct";
 import TailoredSolutions from "../components/TailoredSolutions";
+import WhyChooseUs from "../components/WhyChooseUs";
+import Testimonial from "../components/Testimonial";
 // import Bestsellers from "../components/Bestsellers";
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       {/* <LatestProduct /> */}
       {/* <Bestsellers /> */}
       <TailoredSolutions />
+      <WhyChooseUs/>
+      <Testimonial/>
     </>
   );
 }

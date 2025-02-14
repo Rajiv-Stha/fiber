@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -6,8 +7,21 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "../images/logo@1300x.png";
 import "../css/NavBar.css";
 import { NavLink } from "react-router-dom";
+import { MdArrowDropDown } from "react-icons/md";
+// import { Button } from "@chakra-ui/react"
+import {
+  PopoverArrow,
+  PopoverBody,
+  PopoverContent,
+  PopoverRoot,
+  PopoverTrigger,
+} from "../components/ui/popover"
+
+
 
 function NavBar() {
+  const [open, setOpen] = useState(false)
+
   const [expanded, setExpanded] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -91,18 +105,73 @@ function NavBar() {
                     About Us
                   </NavLink>
 
-                  <NavLink
-                    to="/category"
-                    onClick={handleNavLinkClick}
-                    style={{ fontSize: "17px" }}
-                    className={(e) => {
-                      return e.isActive
-                        ? "aqua paddingg  nav-link"
-                        : "nav-link paddingg hover active";
-                    }}
-                  >
-                    Products
-                  </NavLink>
+                  <PopoverRoot open={open} onOpenChange={setOpen}>
+  <PopoverTrigger asChild>
+    <NavLink
+      to="/category"
+      onClick={() => setOpen(false)} // Closes the popover after navigating
+      style={{ fontSize: "17px", display: "flex", alignItems: "center", color:"black" }}
+      className={(e) =>
+
+        e.isActive
+          ? "aqua paddingg nav-link"
+          : "nav-link paddingg hover active"
+      
+      }
+      onMouseEnter={() => setOpen(true)} // Opens the popover on hover
+      onMouseLeave={() => setOpen(false)} // Closes the popover when mouse leaves
+    >
+      Products
+      <MdArrowDropDown />
+    </NavLink>
+  </PopoverTrigger>
+  <PopoverContent
+    onMouseEnter={() => setOpen(true)} // Keeps the popover open while hovering over the content
+    onMouseLeave={() => setOpen(false)} // Closes the popover when mouse leaves the content
+  >
+    <PopoverArrow />
+    <PopoverBody className="bg-[#e5e3e3]">
+      <ul style={{ listStyle: "none", padding: "10px 8px", margin: 0, color:"#000", fontSize:"14px", display:"flex", flexDirection:"column", gap:"8px" }}>
+        <li className="hover:bg-[#24aae2] transition-all duration-300 hover:text-white p-2">
+          <NavLink
+            to="/category/furniture"
+            onClick={() => setOpen(false)} // Closes the popover
+            className="nav-link"
+          >
+            Furniture
+          </NavLink>
+        </li>
+        <li className="hover:bg-[#24aae2] transition-all duration-300 hover:text-white p-2">
+          <NavLink
+            to="/category/schoolFurniture"
+            onClick={() => setOpen(false)} // Closes the popover
+            className="nav-link"
+          >
+            School Furniture
+          </NavLink>
+        </li>
+        <li className="hover:bg-[#24aae2] transition-all duration-300 hover:text-white p-2">
+          <NavLink
+            to="/category/bathAndSanitary"
+            onClick={() => setOpen(false)} // Closes the popover
+            className="nav-link"
+          >
+            Bath and Sanitary
+          </NavLink>
+        </li>
+        <li className="hover:bg-[#24aae2] transition-all duration-300 hover:text-white p-2">
+          <NavLink
+            to="/category/agriculture"
+            onClick={() => setOpen(false)} // Closes the popover
+            className="nav-link"
+          >
+            Agriculture
+          </NavLink>
+        </li>
+      </ul>
+    </PopoverBody>
+  </PopoverContent>
+</PopoverRoot>
 
                   <NavLink
                     to="/blogs"
