@@ -27,7 +27,7 @@ function AboutC() {
           </div>
           <div className="col-lg-6  mt-3">
           <AnimationComponent animationClass="animate__fadeInRight" >
-          <img src={img1} className="img1" alt="company people" />
+          <img src={img1} className="img1 object-fit-contain" alt="company people" />
           </AnimationComponent>
           </div>
         </div>

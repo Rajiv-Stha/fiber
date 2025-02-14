@@ -48,7 +48,7 @@ function Testimonial() {
           <div className="d-flex justify-content-center flex-column ">
             <h1 className="text-center popular-brands-heading">Testimonial</h1>
             <p className="text-center ">
-            we provide eco-friendly and sustainable materials offering unmatched comfort and durability. Highly recommend for anyone seeking a high quality lifestyle.
+            Certainly! Here's a sample testimonial for a product made with us:
             </p>
           </div>
           

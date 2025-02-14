@@ -163,7 +163,7 @@ function WhyChooseUs() {
                     src={team1}
                     alt=""
                     className="teamPicture"
-                    style={{ height: "250px", width: "450px" }}
+                    style={{ height: "250px", width: "450px", objectFit:"contain" }}
                   />
                   
                   <h5 className="mt-4">{data.name}</h5>

@@ -1,7 +1,26 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import productData from "../newProducts.json";
+import { useParams } from "react-router-dom";
 export default function CategoryDetails() {
+  const { category1, category2 } = useParams();
+  console.log(category1, category2);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [ProductCategory, setProductCategory] = useState([]);
+
+  useEffect(() => {
+    // Find the product based on category1 and category2
+    const foundProduct = productData[category1][category2];
+    setProductCategory(foundProduct);
+  }, [category1, category2]);
+
+  console.log(ProductCategory);
+  /**
+   * 1. import products from the products json file
+   * 2. create a state to store the active product details
+   * 3. find the specific product through category name and index (we can get it througth url) and  store it in the state
+   * 4. use the data below of the details from the active product state  (replace the hard coded values with state values)
+   *
+   */
 
   const product = {
     name: "FRP Table",
@@ -30,20 +49,60 @@ export default function CategoryDetails() {
   ];
 
   return (
-    <div style={{ backgroundColor: "#f9fafb", padding: "50px 20px", minHeight: "100vh" }}>
+    <div
+      style={{
+        backgroundColor: "#f9fafb",
+        padding: "50px 20px",
+        minHeight: "100vh",
+      }}
+    >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Breadcrumb */}
-        <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#718096", marginBottom: "32px" }}>
-          <a href="#" style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }}>Home</a>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            color: "#718096",
+            marginBottom: "32px",
+          }}
+        >
+          <a
+            href="#"
+            style={{
+              color: "inherit",
+              textDecoration: "none",
+              cursor: "pointer",
+            }}
+          >
+            Home
+          </a>
           <span style={{ fontSize: "12px" }}>&gt;</span>
-          <a href="#" style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }}>Furniture</a>
+          <a
+            href="#"
+            style={{
+              color: "inherit",
+              textDecoration: "none",
+              cursor: "pointer",
+            }}
+          >
+            Furniture
+          </a>
           <span style={{ fontSize: "12px" }}>&gt;</span>
-          <span style={{ color: "#3182ce" }}>FRP Table</span>
+          <span style={{ color: "#3182ce" }}>{ProductCategory?.name}</span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px" }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "32px",
+          }}
+        >
           {/* Product Images */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
             <div
               style={{
                 position: "relative",
@@ -59,13 +118,22 @@ export default function CategoryDetails() {
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(4, 1fr)",
+                gap: "16px",
+              }}
+            >
               {images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
                   style={{
-                    border: selectedImage === index ? "2px solid #3182ce" : "2px solid transparent",
+                    border:
+                      selectedImage === index
+                        ? "2px solid #3182ce"
+                        : "2px solid transparent",
                     borderRadius: "8px",
                     overflow: "hidden",
                     cursor: "pointer",
@@ -74,7 +142,11 @@ export default function CategoryDetails() {
                   <img
                     src={image || "/placeholder.svg"}
                     alt={`Thumbnail ${index + 1}`}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
                   />
                 </button>
               ))}
@@ -82,40 +154,138 @@ export default function CategoryDetails() {
           </div>
 
           {/* Product Info */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "32px" }}
+          >
             <div>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "#1a202c", marginBottom: "16px" }}>{product.name}</h1>
-              <p style={{ fontSize: "18px", color: "#4a5568" }}>{product.description.join(" ")}</p>
+              <h1
+                style={{
+                  fontSize: "36px",
+                  fontWeight: "bold",
+                  color: "#1a202c",
+                  marginBottom: "16px",
+                }}
+              >
+                {ProductCategory.name}
+              </h1>
+              <p style={{ fontSize: "18px", color: "#4a5568" }}>
+                {ProductCategory?.description?.join(" ")}
+              </p>
             </div>
 
             <div>
-              <div style={{ display: "flex", gap: "16px", borderBottom: "2px solid #e2e8f0", paddingBottom: "8px" }}>
-                <button style={{ fontSize: "16px", fontWeight: "bold", color: "#3182ce", border: "none", background: "none", cursor: "pointer" }}>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "16px",
+                  borderBottom: "2px solid #e2e8f0",
+                  paddingBottom: "8px",
+                }}
+              >
+                <button
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    color: "#3182ce",
+                    border: "none",
+                    background: "none",
+                    cursor: "pointer",
+                  }}
+                >
                   Specifications
                 </button>
-                <button style={{ fontSize: "16px", fontWeight: "bold", color: "#718096", border: "none", background: "none", cursor: "pointer" }}>
+                <button
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    color: "#718096",
+                    border: "none",
+                    background: "none",
+                    cursor: "pointer",
+                  }}
+                >
                   Features
                 </button>
               </div>
               <div style={{ marginTop: "16px" }}>
-                <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "8px" }}>Material</h3>
-                <p style={{ color: "#4a5568" }}>{product.material}</p>
+                <h3
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Material
+                </h3>
+                <p style={{ color: "#4a5568" }}>{ProductCategory?.material}</p>
               </div>
               <div style={{ marginTop: "16px" }}>
-                <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "8px" }}>Available Sizes</h3>
-                {product.sizes.map((size, index) => (
-                  <div key={index} style={{ color: "#4a5568", display: "flex", alignItems: "center", gap: "8px" }}>
-                    <div style={{ width: "8px", height: "8px", backgroundColor: "#3182ce", borderRadius: "50%" }}></div>
+                <h3
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Available Sizes
+                </h3>
+                {ProductCategory?.sizes?.map((size, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      color: "#4a5568",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "8px",
+                        height: "8px",
+                        backgroundColor: "#3182ce",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
                     {size}
                   </div>
                 ))}
               </div>
               <div style={{ marginTop: "16px" }}>
-                <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "8px" }}>Types</h3>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "8px" }}>
-                  {product.types.map((type, index) => (
-                    <div key={index} style={{ color: "#4a5568", display: "flex", alignItems: "center", gap: "8px" }}>
-                      <div style={{ width: "8px", height: "8px", backgroundColor: "#3182ce", borderRadius: "50%" }}></div>
+                <h3
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Types
+                </h3>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2, 1fr)",
+                    gap: "8px",
+                  }}
+                >
+                  {ProductCategory?.types?.map((type, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        color: "#4a5568",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          backgroundColor: "#3182ce",
+                          borderRadius: "50%",
+                        }}
+                      ></div>
                       {type}
                     </div>
                   ))}
@@ -124,7 +294,15 @@ export default function CategoryDetails() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "16px" }}>Recommended Uses</h3>
+              <h3
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                  marginBottom: "16px",
+                }}
+              >
+                Recommended Uses
+              </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {product.use.split(", ").map((use, index) => (
                   <span

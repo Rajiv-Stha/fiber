@@ -4,6 +4,7 @@
         "name": "FRP Table",
         "sizes": ["30\"X48\"", "24\"X30\"X18\""],
         "material": "Fiber Reinforced Plastic (FRP)",
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "types": ["Canteen", "Meeting", "Study"],
         "use": "Home offices, retail stores, exhibitions, educational institutions, events or picnics, workspace, meeting rooms, dining room",
         "description": [
@@ -16,6 +17,7 @@
         "name": "FRP Reception Chair",
         "size": "17\"X18\"X15\"",
         "material": "Fiber Reinforced Plastic (FRP)",
+       "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "color": "As per request",
         "use": "Office, college, school, health care, government office, workshops, and retail store",
         "description": ["A contemporary, durable, and stylish seating option designed to enhance reception areas for both indoor and outdoor spaces.",
@@ -26,21 +28,25 @@
     "schoolFurniture": [
       {
         "name": "FRP Desk Bench",
+       "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "sizes": ["48\"X30\"X14\"", "60\"X30\"X14\"", "72\"X30\"X14\""],
         "material": "Fiber Reinforced Plastic (FRP)",
         "color": "As per request",
         "use": "Schools, universities, offices, educational institutions, healthcare centers, art and craft organizations, study areas, government offices",
-        "description": "A durable, lightweight, and long-lasting desk and bench solution with modern design for indoor and outdoor use. Buddha Fiber ensures a personalized touch with a wide range of colors and designs.",
+        "description": ["A durable, lightweight, and long-lasting desk and bench solution with modern design for indoor and outdoor use.",
+        "Buddha Fiber ensures a personalized touch with a wide range of colors and designs."],
         "features": ["Low Maintenance", "Eco-Friendly", "High Strength-to-Weight Ratio", "Comfort and Human factors"],
         "warranty": "5 years"
       },
       {
         "name": "FRP Moon Table",
         "size": "60\"X20\"X12\"",
+       "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "color": "As per request",
         "use": "School & colleges, home offices, libraries, conference rooms, group study rooms, reception areas",
-        "description": "A unique and modern piece of furniture designed to resemble a curved moon. The Moon Table is a combination of artistic design and functional utility, bringing elegance and creativity to any space.",
+        "description": ["A unique and modern piece of furniture designed to resemble a curved moon.",
+        "The Moon Table is a combination of artistic design and functional utility, bringing elegance and creativity to any space."],
         "features": ["Elegant Design", "Durable Construction", "Easy Maintenance", "Stability and Support"]
       }
     ],
@@ -48,25 +54,31 @@
       {
         "name": "FRP Bathtubs",
         "sizes": ["66\"X30\"", "55\"X25\"", "73\"X36\""],
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "use": "Apartments, residential bathrooms, hotels & resorts, homes, spas & wellness centers, healthcare facilities, rental properties",
-        "description": "FRP bathtubs blend durability, elegance, and luxury, transforming your bathing space into a sanctuary of relaxation. Customizable in size, shape, and design for unique arrangements.",
+        "description": ["FRP bathtubs blend durability, elegance, and luxury, transforming your bathing space into a sanctuary of relaxation.",
+        "Customizable in size, shape, and design for unique arrangements."],
         "features": ["Lightweight", "Design Versatility", "Durability and Maintenance", "Eco-Friendly"]
       },
       {
         "name": "FRP Dustbin",
         "sizes": ["60 ltr", "120 ltr"],
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "use": "Indoor and outdoor settings, commercial and industrial facilities, recycling stations, public events",
-        "description": "FRP dustbins provide a reliable and stylish waste management solution, ensuring a clean and hygienic environment. They are an eco-friendly alternative to traditional waste bins.",
+        "description": ["FRP dustbins provide a reliable and stylish waste management solution, ensuring a clean and hygienic environment.",
+        "They are an eco-friendly alternative to traditional waste bins."],
         "features": ["Exceptional Durability", "Lightweight and Portable", "Low Maintenance", "Eco-Friendly"]
       },
       {
         "name": "FRP Motu Patlu Dustbin",
         "height": ["41 in (Motu)", "51 in (Patlu)"],
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "use": "Schools, parks, playgrounds, public events",
-        "description": "Designed to create an engaging waste management solution for children, inspired by the popular Indian animated series 'Motu Patlu'. Combines functionality with fun to make waste management appealing.",
+        "description": ["Designed to create an engaging waste management solution for children, inspired by the popular Indian animated series 'Motu Patlu'.",
+        "Combines functionality with fun to make waste management appealing."],
         "features": ["Safe for Kids", "Lightweight and Portable", "Durability and Strength", "Appealing Design and Color"]
       }
     ],
@@ -74,17 +86,21 @@
       {
         "name": "FRP Feeding Tray",
         "sizes": ["2 Feet", "3 Feet", "4 Feet", "5 Feet", "6 Feet", "7 Feet", "8 Feet", "9 Feet", "10 Feet"],
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "use": "Poultry farming, cattle rearing, goat farming, cow farming",
-        "description": "Constructed using high-quality fiberglass reinforced plastic, known for strength, durability, and resistance to corrosion. Customizable sizes and shapes for specific needs.",
+        "description": ["Constructed using high-quality fiberglass reinforced plastic, known for strength, durability, and resistance to corrosion.",
+        "Customizable sizes and shapes for specific needs."],
         "features": ["Durability", "Customizable Sizes and Shapes", "Easy to Clean"]
       },
       {
         "name": "FRP Gamala (Flower Pot)",
         "size": "18\"X16\"",
+        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "material": "Fiber Reinforced Plastic (FRP)",
         "use": "Indoor & Outdoor",
-        "description": "FRP flower pots are a popular choice for both indoor and outdoor gardening due to their durability, lightweight nature, and aesthetic appeal. Provides a visually stunning addition to any environment.",
+        "description": ["FRP flower pots are a popular choice for both indoor and outdoor gardening due to their durability, lightweight nature, and aesthetic appeal.",
+        "Provides a visually stunning addition to any environment."],
         "features": ["Affordability", "Environmentally Friendly", "Durability", "Design Versatility"]
       }
     ]

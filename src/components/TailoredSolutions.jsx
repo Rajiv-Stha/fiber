@@ -83,7 +83,7 @@ function TailoredSolutions() {
                   >
                     <AnimationComponent animationClass={item.animation}>
                     <div className="org">
-                      <img src={item.image} className="foto" alt="School" />
+                      <img src={item.image} className="foto object-fit-contain" alt="School" />
                       <h3>{item.heading}</h3>
                     </div>
                     </AnimationComponent>

@@ -31,7 +31,7 @@ function NavBar() {
 
   return (
     <>
-      <div className={`bg-nav ${visible ? "visible" : "hidden"}`}>
+      <div className={`bg-nav`}>
         <Navbar
           expanded={expanded}
           expand="md"
