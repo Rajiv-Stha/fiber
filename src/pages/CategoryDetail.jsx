@@ -194,7 +194,7 @@ export default function CategoryDetails() {
                 >
                   Specifications
                 </button>
-                <button
+                {/* <button
                   style={{
                     fontSize: "16px",
                     fontWeight: "bold",
@@ -205,7 +205,7 @@ export default function CategoryDetails() {
                   }}
                 >
                   Features
-                </button>
+                </button> */}
               </div>
               <div style={{ marginTop: "16px" }}>
                 <h3
@@ -219,6 +219,40 @@ export default function CategoryDetails() {
                 </h3>
                 <p style={{ color: "#4a5568" }}>{ProductCategory?.material}</p>
               </div>
+
+              <div style={{ marginTop: "16px" }}>
+                <h3
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Features
+                </h3>
+                {ProductCategory?.features?.map((size, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      color: "#4a5568",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "8px",
+                        height: "8px",
+                        backgroundColor: "#3182ce",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
+                    {size}
+                  </div>
+                ))}
+              </div>
+
               <div style={{ marginTop: "16px" }}>
                 <h3
                   style={{
@@ -301,10 +335,10 @@ export default function CategoryDetails() {
                   marginBottom: "16px",
                 }}
               >
-                Recommended Uses
+               Uses
               </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                {product.use.split(", ").map((use, index) => (
+                {ProductCategory?.use?.split(", ").map((use, index) => (
                   <span
                     key={index}
                     style={{

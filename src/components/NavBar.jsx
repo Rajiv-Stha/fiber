@@ -92,7 +92,7 @@ function NavBar() {
                   </NavLink>
 
                   <NavLink
-                    to="/products"
+                    to="/category"
                     onClick={handleNavLinkClick}
                     style={{ fontSize: "17px" }}
                     className={(e) => {
