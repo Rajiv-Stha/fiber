@@ -1,4 +1,4 @@
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import productData from "../newProducts.json";
 
@@ -37,6 +37,11 @@ export default function CategoryEachDetail() {
                   <p className="text-sm text-gray-600">
                     {product.description ? product.description[0] : "No description available"}
                   </p>
+                  <Link to={`/category/${categoryName}/${index}`}>
+                    <button className="mt-4 text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+                      View Details <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))

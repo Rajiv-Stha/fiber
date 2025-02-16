@@ -6,11 +6,13 @@ import Features from "../components/Features";
 import TailoredSolutions from "../components/TailoredSolutions";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonial from "../components/Testimonial";
+import ProductCarousel from "../components/ProductCarousel";
 // import Bestsellers from "../components/Bestsellers";
 function Home() {
   return (
     <>
       <Hero />
+      <ProductCarousel/>
       {/* <ProductCategories /> */}
       <Features />
       {/* <LatestProduct /> */}
