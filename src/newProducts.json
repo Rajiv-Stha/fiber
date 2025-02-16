@@ -4,7 +4,8 @@
         "name": "FRP Table",
         "sizes": ["30\"X48\"", "24\"X30\"X18\""],
         "material": "Fiber Reinforced Plastic (FRP)",
-        "image": ["https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200"],
+      
+        "image": ["https://res.cloudinary.com/onlinecoder/image/upload/v1739690743/ltmtb1foxfynrx1jbpnw.png","https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200"],
         "types": ["Canteen", "Meeting", "Study"],
         "use": "Home offices, retail stores, exhibitions, educational institutions, events or picnics, workspace, meeting rooms, dining room",
         "description": [

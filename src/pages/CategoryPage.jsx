@@ -26,9 +26,9 @@ export default function CategoryPage() {
                   >
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img
-                        src={product.image || "/placeholder.svg"}
+                        src={product.image[0] }
                         alt={product.name}
-                        className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
+                        className="!object-contain w-full !h-full group-hover:scale-105 transition-transform duration-200"
                       />
                     </div>
                     <div className="p-4">

@@ -5,6 +5,7 @@ import productData from "../newProducts.json";
 export default function CategoryEachDetail() {
   const { categoryName } = useParams();
   const products = productData[categoryName] || [];
+  console.log(products)
 
   return (
     <div className="min-h-screen bg-gray-50 py-4">
@@ -27,9 +28,9 @@ export default function CategoryEachDetail() {
               >
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <img
-                    src={product.image || "/placeholder.svg"}
+                    src={product.image[0] || "/placeholder.svg"}
                     alt={product.name}
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
+                    className="!object-contain w-full !h-full group-hover:scale-105 transition-transform duration-200"
                   />
                 </div>
                 <div className="p-4">

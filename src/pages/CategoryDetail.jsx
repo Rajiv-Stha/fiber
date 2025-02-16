@@ -5,7 +5,7 @@ export default function CategoryDetails() {
   const { category1, category2 } = useParams();
   console.log(category1, category2);
   const [selectedImage, setSelectedImage] = useState(0);
-  const [ProductCategory, setProductCategory] = useState([]);
+  const [ProductCategory, setProductCategory] = useState({});
 
   useEffect(() => {
     // Find the product based on category1 and category2
@@ -41,13 +41,14 @@ export default function CategoryDetails() {
     ],
   };
 
-  const images = [
-    "https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "https://images.pexels.com/photos/937490/pexels-photo-937490.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  ];
+  // const images = [
+  //   "https://images.pexels.com/photos/1748864/pexels-photo-1748864.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  //   "https://images.pexels.com/photos/3138839/pexels-photo-3138839.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  //   "https://images.pexels.com/photos/269176/pexels-photo-269176.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  //   "https://images.pexels.com/photos/937490/pexels-photo-937490.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  // ];
 
+  const images = ProductCategory?.image || [];
   return (
     <div
       style={{
@@ -113,8 +114,10 @@ export default function CategoryDetails() {
               }}
             >
               <img
-                src={images[selectedImage] || "/placeholder.svg"}
-                alt={`Image ${selectedImage + 1}`}
+                src={
+                  images[selectedImage] || "/placeholder.svg"
+                }
+                alt={`Image`}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
@@ -335,7 +338,7 @@ export default function CategoryDetails() {
                   marginBottom: "16px",
                 }}
               >
-               Uses
+                Uses
               </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {ProductCategory?.use?.split(", ").map((use, index) => (

@@ -51,9 +51,9 @@ export default function ProductCarousel() {
             <div className="group bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={product.image || "/placeholder.svg"}
+                  src={product.image[0] || "/placeholder.svg"}
                   alt={product.name}
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
+                  className="!object-contain w-full !h-full group-hover:scale-105 transition-transform duration-200"
                 />
               </div>
               <div className="p-4">
